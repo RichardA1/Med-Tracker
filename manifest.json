@@ -3,9 +3,9 @@
   "name": "Medication Tracker",
   "version": "1.0.0",
   "config_flow": true,
-  "documentation": "https://github.com/yourusername/med_tracker",
+  "documentation": "https://github.com/RichardA1/med_tracker",
   "requirements": [],
-  "codeowners": ["@yourgithubusername"],
+  "codeowners": ["@RichardA1"],
   "dependencies": [],
   "iot_class": "local_polling"
 }
