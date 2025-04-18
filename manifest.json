@@ -3,7 +3,7 @@
   "name": "Medication Tracker",
   "version": "1.0.0",
   "config_flow": true,
-  "documentation": "https://github.com/RichardA1/med_tracker",
+  "documentation": "https://github.com/RichardA1/Med-Tracker",
   "requirements": [],
   "codeowners": ["@RichardA1"],
   "dependencies": [],
