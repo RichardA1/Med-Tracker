@@ -1,0 +1,11 @@
+{
+  "domain": "med_tracker",
+  "name": "Medication Tracker",
+  "version": "1.0.0",
+  "config_flow": true,
+  "documentation": "https://github.com/yourusername/med_tracker",
+  "requirements": [],
+  "codeowners": ["@yourgithubusername"],
+  "dependencies": [],
+  "iot_class": "local_polling"
+}
