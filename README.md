@@ -69,11 +69,17 @@ Each medication becomes:
 
 ## File Structure
 custom_components/med_tracker/
+
 ├── __init__.py
+
 ├── manifest.json
+
 ├── config_flow.py
+
 ├── sensor.py
+
 ├── select.py
+
 └── const.py
 
 ---
