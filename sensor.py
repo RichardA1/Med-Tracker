@@ -22,6 +22,7 @@ class MedTrackerSensor(SensorEntity):
         self._attr_name = f"{data['medication_name']} Remaining Pills"
         self._attr_native_unit_of_measurement = "pills"
         self._attr_state = data["initial_pills"]
+        self._attr_entity_picture = data["photo_url"]
 
     @property
     def native_value(self):
