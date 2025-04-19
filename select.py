@@ -23,6 +23,10 @@ class MedTrackerStatusSelect(SelectEntity):
         self._attr_options = [STATUS_TAKEN, STATUS_LATER, STATUS_FORGOTTEN]
         self._attr_current_option = data.get("status", STATUS_LATER)
 
+        self._photo_url = data.get("photo_url")
+
+        self._attr_entity_picture = self._photo_url
+
     def select_option(self, option: str) -> None:
         """Set the selected option."""
         self._attr_current_option = option
