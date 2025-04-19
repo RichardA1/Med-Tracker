@@ -22,6 +22,7 @@ class MedTrackerConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 data={
                     "medication_name": user_input["medication_name"],
                     "initial_pills": user_input["initial_pills"],
+                    "photo_url": user_input.get("photo_url"),
                     "status": user_input["status"],
                 },
             )
@@ -31,6 +32,7 @@ class MedTrackerConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             data_schema=vol.Schema({
                 vol.Required("medication_name"): str,
                 vol.Required("initial_pills", default=30): int,
+                vol.Optional("photo_url"): str,
                 vol.Required("status", default=STATUS_LATER): vol.In(
                     [STATUS_TAKEN, STATUS_LATER, STATUS_FORGOTTEN]
                 ),
